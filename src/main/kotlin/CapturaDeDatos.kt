@@ -5,53 +5,63 @@ open class CapturaDeDatos:numero() {
 
    open fun CapturarDatoA(){
         println("Ingrese el valor de A: ")
-        a= readln().toDouble()
+        a= readln().toInt()
 
     }
 
     open fun CapturarDatoB(){
         println("Ingrese el valor de B: ")
-        b= readln().toDouble()
+        b= readln().toInt()
 
     }
 
     open fun CapturarDatoC(){
         println("Ingrese el valor de C: ")
-        c = readln().toDouble()
+        c = readln().toInt()
+
+       if (c == 0){
+           println("C no puede ser 0")
+           CapturarDatoC()
+       }
 
     }
 
-    var bPotencia = 0.0
-    var ac = 0.0
-    var total = 0.0
+
+
+    var bPotencia = 0
+    var ac = 0
+    var total = 0
     var raizTotal = 0.0
     var bMasRaiz = 0.0
+    var bMenosRaiz = 0.0
     var x1 = 0.0
     var x2 = 0.0
+    var bNegativa = 0
 
-    open fun primeraRaiz(){
+    open fun Raiz(){
         println(a)
         println(b)
         println(c)
 
+        bNegativa = (-b)
+        bPotencia = b * b
+        ac = (4 * (a * c))
 
-        bPotencia = b.pow(2.0)
-        ac = (4 * a * c)
+        total = bPotencia - ac
 
-        total = (bPotencia - ac)
+        raizTotal = sqrt(total.toDouble())
 
-        raizTotal = sqrt(total)
 
-        println(raizTotal)
+
 
     }fun primerRaultado(){
-        bMasRaiz = (-b)+raizTotal
+        bMasRaiz = ((bNegativa)+raizTotal)
         x1 = bMasRaiz / (2*a)
         println("El primer valor de X com b + raiz es: $x1")
 
     }fun segundoRaultado(){
-        bMasRaiz = (-b)-raizTotal
-        x2 = bMasRaiz / (2*a)
-        println("El primer valor de X com b + raiz es: $x2")
+        bMenosRaiz = ((bNegativa)-raizTotal)
+        x2 = bMenosRaiz / (2*a)
+        println("El primer valor de X com b - raiz es: $x2")
     }
 }
