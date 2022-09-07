@@ -1,5 +1,7 @@
 class DadoRecuadro: Dado() {
 
+    val asteriscos: MutableList<String> = mutableListOf()
+
     fun tirar2 (){
         numero = (1..100).random()
     }
@@ -14,7 +16,11 @@ class DadoRecuadro: Dado() {
     fun impresionEnAsteristicos(){
         var mensaje : String = "*"
         for (x in 1..numero){
-            println("*")
+           asteriscos.add("*")
         }
+
+
+    }fun imprimirAsteriscos (){
+        println("$numero"+ " = "+asteriscos)
     }
 }

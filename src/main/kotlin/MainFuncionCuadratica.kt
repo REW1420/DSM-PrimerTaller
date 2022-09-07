@@ -3,12 +3,14 @@ fun main(args: Array<String>) {
     val dado = Dado()
     val dado2= DadoRecuadro()
 
-    for (x in 1..20){
-                dado.tirar()
+    dado.tirar()
+    dado.imprimir()
+    dado.traducir()
 
-        dado.traducir()
-
-    }
+    dado2.tirar2()
+    dado2.imprimir()
+    dado2.impresionEnAsteristicos()
+    dado2.imprimirAsteriscos()
 
 
 }

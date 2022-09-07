@@ -12,10 +12,15 @@ open class Dado {
     val nueve : String = " Nueve "
 
     val treinta : String = " Treinta y"
-    val cuarenta : String = "Cuarenta y"
+    val cuarenta : String = " Cuarenta y"
+    val cincuenta : String =" Cincuenta y"
+    val sesenta : String =" Sesenta y"
+    val setenta : String =" Sesenta y"
+    val ochenta : String = " Ochenta y"
+    val noventa : String = " Noventa y"
 
     open fun tirar (){
-        numero = (1..50).random()
+        numero = (1..100).random()
     }
     open fun imprimir (){
         println(numero)
@@ -130,6 +135,118 @@ open class Dado {
                 println("$numero" + " = $cuarenta" + ocho)
             };if (numero == 49) {
                 println("$numero" + " = $cuarenta" + nueve)
+            }
+        };if (numero >= 50 && numero < 59) {
+            if (numero == 50) {
+                println("$numero" + " = " + "Cincuenta")
+            };if (numero == 51) {
+                println("$numero" + " = $cincuenta" + uno)
+            };if (numero == 52) {
+                println("$numero" + " = $cincuenta" + dos)
+            };if (numero == 53) {
+                println("$numero" + " = $cincuenta" + tres)
+            };if (numero == 54) {
+                println("$numero" + " = $cincuenta" + cuatro)
+            };if (numero == 55) {
+                println("$numero" + " = $cincuenta" + cinco)
+            };if (numero == 56) {
+                println("$numero" + " = $cincuenta" + seis)
+            };if (numero == 57) {
+                println("$numero" + " = $cincuenta" + siete)
+            };if (numero == 58) {
+                println("$numero" + " = $cincuenta" + ocho)
+            };if (numero == 59) {
+                println("$numero" + " = $cincuenta" + nueve)
+            }
+        };if (numero >= 60 && numero < 69) {
+            if (numero == 60) {
+                println("$numero" + " = " + "Sesenta")
+            };if (numero == 61) {
+                println("$numero" + " = $sesenta" + uno)
+            };if (numero == 62) {
+                println("$numero" + " = $sesenta" + dos)
+            };if (numero == 63) {
+                println("$numero" + " = $sesenta" + tres)
+            };if (numero == 64) {
+                println("$numero" + " = $sesenta" + cuatro)
+            };if (numero == 65) {
+                println("$numero" + " = $sesenta" + cinco)
+            };if (numero == 66) {
+                println("$numero" + " = $sesenta" + seis)
+            };if (numero == 67) {
+                println("$numero" + " = $sesenta" + siete)
+            };if (numero == 68) {
+                println("$numero" + " = $sesenta" + ocho)
+            };if (numero == 69) {
+                println("$numero" + " = $sesenta" + nueve)
+            }
+        };if (numero >= 70 && numero < 79) {
+            if (numero == 70) {
+                println("$numero" + " = " + "Sesenta")
+            };if (numero == 71) {
+                println("$numero" + " = $setenta" + uno)
+            };if (numero == 72) {
+                println("$numero" + " = $setenta" + dos)
+            };if (numero == 73) {
+                println("$numero" + " = $setenta" + tres)
+            };if (numero == 74) {
+                println("$numero" + " = $setenta" + cuatro)
+            };if (numero == 75) {
+                println("$numero" + " = $setenta" + cinco)
+            };if (numero == 76) {
+                println("$numero" + " = $setenta" + seis)
+            };if (numero == 77) {
+                println("$numero" + " = $setenta" + siete)
+            };if (numero == 78) {
+                println("$numero" + " = $setenta" + ocho)
+            };if (numero == 79) {
+                println("$numero" + " = $setenta" + nueve)
+            }
+        };if (numero >= 80 && numero < 89) {
+            if (numero == 80) {
+                println("$numero" + " = " + " Ochenta")
+            };if (numero == 81) {
+                println("$numero" + " = $ochenta" + uno)
+            };if (numero == 82) {
+                println("$numero" + " = $ochenta" + dos)
+            };if (numero == 83) {
+                println("$numero" + " = $ochenta" + tres)
+            };if (numero == 84) {
+                println("$numero" + " = $ochenta" + cuatro)
+            };if (numero == 85) {
+                println("$numero" + " = $ochenta" + cinco)
+            };if (numero == 86) {
+                println("$numero" + " = $ochenta" + seis)
+            };if (numero == 87) {
+                println("$numero" + " = $ochenta" + siete)
+            };if (numero == 88) {
+                println("$numero" + " = $ochenta" + ocho)
+            };if (numero == 89) {
+                println("$numero" + " = $ochenta" + nueve)
+            }
+        };if (numero >= 90 && numero <= 100) {
+            if (numero == 90) {
+                println("$numero" + " = " + " Ochenta")
+            };if (numero == 91) {
+                println("$numero" + " = $noventa" + uno)
+            };if (numero == 92) {
+                println("$numero" + " = $noventa" + dos)
+            };if (numero == 93) {
+                println("$numero" + " = $noventa" + tres)
+            };if (numero == 94) {
+                println("$numero" + " = $noventa" + cuatro)
+            };if (numero == 95) {
+                println("$numero" + " = $noventa" + cinco)
+            };if (numero == 96) {
+                println("$numero" + " = $noventa" + seis)
+            };if (numero == 97) {
+                println("$numero" + " = $noventa" + siete)
+            };if (numero == 98) {
+                println("$numero" + " = $noventa" + ocho)
+            };if (numero == 99) {
+                println("$numero" + " = $noventa" + nueve)
+            };if (numero == 100){
+                println("$numero" + " = Cien")
             }
         }
     }
