@@ -6,12 +6,22 @@ open class CapturaDeDatos:numero() {
    open fun CapturarDatoA(){
         println("Ingrese el valor de A: ")
         a= readln().toInt()
+        
+          if (a == 0){
+           println("C no puede ser 0")
+           CapturarDatoA()
+       }
 
     }
 
     open fun CapturarDatoB(){
         println("Ingrese el valor de B: ")
         b= readln().toInt()
+        
+          if (b == 0){
+           println("C no puede ser 0")
+           CapturarDatoB()
+       }
 
     }
 
